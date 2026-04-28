@@ -1,0 +1,24 @@
+# Source / reference materials (not for production)
+COPY.docx.pdf
+estilo_cores_fontes.jpeg
+modelo.png
+
+# Original (unconverted) image folders — production uses /images and Foto_Perfil/foto_perfil.webp
+Foto_profissional/
+Fotos_clinica/
+Resultados/
+Foto_Perfil/*.jpg
+Foto_Perfil/*.jpeg
+Foto_Perfil/*.png
+
+# Tooling artifacts
+node_modules/
+package.json
+package-lock.json
+_convert.js
+_modelo_part_*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.claude/
