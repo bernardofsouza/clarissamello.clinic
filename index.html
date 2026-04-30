@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#1A1410" />
+<meta name="theme-color" content="#FCFCFC" />
 <meta name="description" content="Remoção de tatuagem e micropigmentação a laser em Paulo Afonso. Avaliação personalizada na Clarissa Mello Clinic. 17 anos de experiência." />
 <title>Clarissa Mello Clinic — Remoção de Tatuagem e Micropigmentação · Paulo Afonso</title>
 
@@ -17,36 +17,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 <link rel="preload" as="image" href="images/clinica-1.webp" fetchpriority="high">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
+  // Palette and fonts extracted from estilo_cores_fontes.jpeg by pixel sampling.
+  // Whites:   #FCFCFC (background)        — averaged from clean story bg pixels
+  //           #ECECEC (elevated surface)  — averaged from MUDOU pill bg
+  // Black:    #0A0A0A                     — averaged from "Mercado da Estética" + body text
+  // Gold:     #B99B64 (primary, MUDOU)    — 8.8k px averaged
+  //           #AB8F62 (deeper, eyebrow)   — 2.1k px averaged
+  //           #C2A773 (lighter tan)       — 13.4k px averaged from banner
+  // Brown CTA:#917765                     — averaged from "Ver detalhes" button bg
+  // Fonts (closest Google Fonts equivalents to the visible glyphs):
+  //   Display Didone serif italic (MUDOU/EXOSSOMOS) → Playfair Display
+  //   Sans-serif body/headings → Inter
   tailwind.config = {
     theme: {
       extend: {
         colors: {
-          cream:      '#F4EBDD',
-          'cream-2':  '#EBDFCB',
-          'cream-3':  '#E0D0B6',
-          ink:        '#2B1F16',
-          'ink-soft': '#5B4A3D',
-          'ink-mute': '#857363',
-          gold:       '#B08E5E',
-          'gold-2':   '#A07A45',
-          'gold-3':   '#C9A977',
-          cocoa:      '#5B4036',
-          'cocoa-2':  '#3F2A22',
+          cream:      '#FCFCFC',
+          'cream-2':  '#ECECEC',
+          'cream-3':  '#C2A773',
+          ink:        '#0A0A0A',
+          'ink-soft': '#0A0A0A',
+          'ink-mute': '#0A0A0A',
+          gold:       '#B99B64',
+          'gold-2':   '#AB8F62',
+          'gold-3':   '#C2A773',
+          cocoa:      '#917765',
+          'cocoa-2':  '#917765',
         },
         fontFamily: {
-          serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-          sans:  ['Outfit', 'system-ui', 'sans-serif'],
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans:  ['Inter', 'system-ui', 'sans-serif'],
         },
         boxShadow: {
-          'lift':  '0 1px 0 rgba(176,142,94,0.10), 0 8px 24px -12px rgba(43,31,22,0.18), 0 24px 64px -32px rgba(43,31,22,0.22)',
-          'lift-deep':  '0 1px 0 rgba(176,142,94,0.18), 0 12px 36px -16px rgba(43,31,22,0.28), 0 36px 90px -40px rgba(43,31,22,0.32)',
-          'gold-ring': '0 0 0 1px rgba(176,142,94,0.35), 0 18px 40px -22px rgba(91,64,54,0.45)',
+          'lift':       '0 1px 0 rgba(185,155,100,0.10), 0 8px 24px -12px rgba(10,10,10,0.18), 0 24px 64px -32px rgba(10,10,10,0.22)',
+          'lift-deep':  '0 1px 0 rgba(185,155,100,0.18), 0 12px 36px -16px rgba(10,10,10,0.28), 0 36px 90px -40px rgba(10,10,10,0.32)',
+          'gold-ring':  '0 0 0 1px rgba(185,155,100,0.35), 0 18px 40px -22px rgba(145,119,101,0.45)',
         },
       },
     },
@@ -55,17 +66,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <style>
   :root {
-    --cream:     #F4EBDD;
-    --cream-2:   #EBDFCB;
-    --cream-3:   #E0D0B6;
-    --ink:       #2B1F16;
-    --ink-soft:  #5B4A3D;
-    --ink-mute:  #857363;
-    --gold:      #B08E5E;
-    --gold-2:    #A07A45;
-    --gold-3:    #C9A977;
-    --cocoa:     #5B4036;
-    --cocoa-2:   #3F2A22;
+    --cream:     #FCFCFC;
+    --cream-2:   #ECECEC;
+    --cream-3:   #C2A773;
+    --ink:       #0A0A0A;
+    --ink-soft:  #0A0A0A;
+    --ink-mute:  #0A0A0A;
+    --gold:      #B99B64;
+    --gold-2:    #AB8F62;
+    --gold-3:    #C2A773;
+    --cocoa:     #917765;
+    --cocoa-2:   #917765;
   }
 
   * { -webkit-tap-highlight-color: transparent; }
@@ -73,41 +84,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Outfit', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     color: var(--ink);
     background: var(--cream);
-    font-feature-settings: "ss01","ss02","cv11";
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
-  .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.005em; }
+  .font-serif { font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.005em; }
 
-  /* Subtle grain texture, applied via SVG noise */
+  /* Subtle warm grain — uses extracted gold tint (#B99B64) as the noise color */
   .grain::before {
     content: "";
     position: absolute; inset: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.12  0 0 0 0 0.08  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>");
-    opacity: .07;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.725  0 0 0 0 0.608  0 0 0 0 0.392  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>");
+    opacity: .05;
     mix-blend-mode: multiply;
     z-index: 0;
   }
 
-  /* Soft warm light bloom in hero corner */
+  /* Soft warm light bloom — uses extracted gold tint */
   .glow-warm::after {
     content:"";
     position:absolute;
     inset:auto -20% -40% auto;
     width: 70%;
     aspect-ratio: 1/1;
-    background: radial-gradient(closest-side, rgba(201,169,119,0.45), rgba(201,169,119,0.0) 70%);
+    background: radial-gradient(closest-side, rgba(185,155,100,0.18), rgba(185,155,100,0.0) 70%);
     filter: blur(12px);
     z-index: 0;
     pointer-events:none;
   }
 
-  /* Decorative ornament (custom SVG flourish) */
+  /* Decorative ornament */
   .ornament {
     display:flex; align-items:center; justify-content:center; gap: 14px;
     color: var(--gold-2);
@@ -118,67 +128,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .ornament .dot { width: 5px; height: 5px; border-radius: 999px; background: var(--gold); transform: rotate(45deg); border-radius: 1px; }
 
-  /* Section divider rule */
+  /* Section divider rule — extracted gold at 20% opacity */
   .section-rule {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(176,142,94,0.20) 30%, rgba(176,142,94,0.20) 70%, transparent);
+    background: linear-gradient(90deg, transparent, rgba(185,155,100,0.20) 30%, rgba(185,155,100,0.20) 70%, transparent);
     border: 0; margin: 0;
   }
 
-  /* Italic emphasis like the reference style guide */
-  .em-serif { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; color: var(--gold-2); }
+  /* Italic emphasis — same Didone serif as MUDOU in the reference */
+  .em-serif { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 500; color: var(--gold-2); }
 
-  /* Optical-size compensation: Cormorant's x-height is shorter than Outfit's,
-     so .em-serif looks visually smaller inside sans body text. Bump it
-     ~20% only inside body-copy contexts (headings already use the same serif). */
+  /* Optical-size compensation: Playfair Display italic has a smaller x-height
+     than Inter, so .em-serif needs a small bump inside sans body copy. */
   p .em-serif,
   li .em-serif,
   summary .em-serif,
   figcaption .em-serif {
-    font-size: 1.20em;
+    font-size: 1.18em;
     line-height: 1;
     letter-spacing: 0.005em;
   }
 
-  /* CTA primary */
+  /* CTA primary — extracted brown #917765, white text from extracted bg */
   .btn-primary {
     position: relative;
     display:inline-flex; align-items:center; justify-content:center; gap: 12px;
     padding: 16px 28px;
-    background: linear-gradient(180deg, #6B4D3F 0%, #4F362C 100%);
-    color: #F5E6CF;
-    font-family: 'Outfit', sans-serif;
+    background: var(--cocoa);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
     font-size: 13px; font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     border-radius: 999px;
     box-shadow:
-      inset 0 1px 0 rgba(255,225,180,0.12),
-      0 1px 0 rgba(176,142,94,0.30),
-      0 10px 24px -12px rgba(43,31,22,0.45),
-      0 30px 64px -28px rgba(43,31,22,0.50);
-    transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s cubic-bezier(.2,.7,.2,1), background .25s ease;
+      inset 0 1px 0 rgba(252,252,252,0.10),
+      0 1px 0 rgba(185,155,100,0.30),
+      0 10px 24px -12px rgba(10,10,10,0.30),
+      0 30px 64px -28px rgba(10,10,10,0.35);
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s cubic-bezier(.2,.7,.2,1), filter .25s ease;
   }
   .btn-primary::before {
     content:"";
     position: absolute; inset: 0;
     border-radius: 999px;
     padding: 1px;
-    background: linear-gradient(180deg, rgba(201,169,119,0.55), rgba(201,169,119,0.05) 60%, rgba(201,169,119,0.30));
+    background: linear-gradient(180deg, rgba(185,155,100,0.55), rgba(185,155,100,0.05) 60%, rgba(185,155,100,0.30));
     -webkit-mask: linear-gradient(#000,#000) content-box, linear-gradient(#000,#000);
     -webkit-mask-composite: xor; mask-composite: exclude;
     pointer-events:none;
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    background: linear-gradient(180deg, #76574A 0%, #563D32 100%);
+    filter: brightness(1.08);
     box-shadow:
-      inset 0 1px 0 rgba(255,225,180,0.18),
-      0 1px 0 rgba(176,142,94,0.40),
-      0 14px 30px -14px rgba(43,31,22,0.50),
-      0 40px 80px -32px rgba(43,31,22,0.55);
+      inset 0 1px 0 rgba(252,252,252,0.16),
+      0 1px 0 rgba(185,155,100,0.40),
+      0 14px 30px -14px rgba(10,10,10,0.35),
+      0 40px 80px -32px rgba(10,10,10,0.40);
   }
-  .btn-primary:active { transform: translateY(0); }
+  .btn-primary:active { transform: translateY(0); filter: brightness(0.96); }
   .btn-primary:focus-visible {
     outline: 2px solid var(--gold-3); outline-offset: 4px;
   }
@@ -192,11 +201,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing: 0.18em;
     text-transform: uppercase;
     border-radius: 999px;
-    border: 1px solid rgba(43,31,22,0.18);
+    border: 1px solid rgba(10,10,10,0.18);
     background: transparent;
     transition: border-color .25s ease, background .25s ease, transform .25s ease;
   }
-  .btn-ghost:hover { border-color: var(--gold-2); background: rgba(176,142,94,0.06); transform: translateY(-1px); }
+  .btn-ghost:hover { border-color: var(--gold-2); background: rgba(185,155,100,0.06); transform: translateY(-1px); }
   .btn-ghost:active { transform: translateY(0); }
   .btn-ghost:focus-visible { outline: 2px solid var(--gold-3); outline-offset: 4px; }
 
@@ -216,21 +225,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     content:"";
     position:absolute; inset:0;
     background:
-      linear-gradient(180deg, rgba(43,31,22,0.0) 55%, rgba(43,31,22,0.35) 100%),
-      radial-gradient(80% 60% at 50% 30%, rgba(244,235,221,0.08), rgba(43,31,22,0.20) 90%);
+      linear-gradient(180deg, rgba(10,10,10,0.0) 55%, rgba(10,10,10,0.30) 100%),
+      radial-gradient(80% 60% at 50% 30%, rgba(252,252,252,0.06), rgba(10,10,10,0.18) 90%);
     pointer-events:none;
   }
 
   /* Card style */
   .card-soft {
-    background: linear-gradient(180deg, rgba(255,250,240,0.78) 0%, rgba(244,235,221,0.55) 100%);
-    border: 1px solid rgba(176,142,94,0.18);
+    background: linear-gradient(180deg, rgba(252,252,252,0.85) 0%, rgba(236,236,236,0.55) 100%);
+    border: 1px solid rgba(185,155,100,0.18);
     border-radius: 18px;
-    box-shadow: 0 1px 0 rgba(255,250,240,0.65) inset, 0 12px 32px -22px rgba(43,31,22,0.20);
+    box-shadow: 0 1px 0 rgba(252,252,252,0.65) inset, 0 12px 32px -22px rgba(10,10,10,0.18);
   }
-  .card-soft.flat { background: rgba(255,250,240,0.55); }
+  .card-soft.flat { background: rgba(252,252,252,0.55); }
 
-  /* Number eyebrow */
+  /* Eyebrow micro-label */
   .eyebrow {
     display:inline-flex; align-items:center; gap: 10px;
     color: var(--gold-2);
@@ -242,7 +251,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* FAQ */
   details.faq {
-    border-bottom: 1px solid rgba(176,142,94,0.20);
+    border-bottom: 1px solid rgba(185,155,100,0.20);
     padding: 18px 0;
   }
   details.faq[open] summary .icon { transform: rotate(45deg); }
@@ -255,23 +264,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     transition: color .25s ease;
   }
   details.faq summary::-webkit-details-marker { display:none; }
-  details.faq summary:hover { color: var(--cocoa-2); }
+  details.faq summary:hover { color: var(--cocoa); }
   details.faq .icon {
     flex: 0 0 28px; height: 28px; width: 28px;
     border-radius: 999px;
-    border: 1px solid rgba(176,142,94,0.45);
+    border: 1px solid rgba(185,155,100,0.45);
     color: var(--gold-2);
     display:flex; align-items:center; justify-content:center;
     transition: transform .35s cubic-bezier(.2,.7,.2,1), background .25s ease;
     flex-shrink:0;
   }
-  details.faq summary:hover .icon { background: rgba(176,142,94,0.10); }
+  details.faq summary:hover .icon { background: rgba(185,155,100,0.10); }
   details.faq .answer {
-    color: var(--ink-soft);
+    color: var(--ink);
     margin-top: 12px;
     font-size: 15px;
     line-height: 1.65;
     max-width: 60ch;
+    opacity: 0.78;
   }
 
   /* Reveal on scroll */
@@ -291,26 +301,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .rise-4 { animation-delay: .35s; }
   .rise-5 { animation-delay: .45s; }
 
-  /* Pulse for WhatsApp float */
-  @keyframes wapulse {
-    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.55), 0 18px 40px -16px rgba(0,0,0,0.35); }
-    70% { box-shadow: 0 0 0 18px rgba(37,211,102,0), 0 18px 40px -16px rgba(0,0,0,0.35); }
-    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 18px 40px -16px rgba(0,0,0,0.35); }
-  }
-
-  .wa-float {
-    position: fixed; right: 18px; bottom: 18px; z-index: 50;
-    width: 58px; height: 58px; border-radius: 999px;
-    background: linear-gradient(180deg,#2BD56F 0%, #1FAE5A 100%);
-    color: white;
-    display:flex; align-items:center; justify-content:center;
-    animation: wapulse 2.4s ease-out infinite;
-    transition: transform .25s ease;
-  }
-  .wa-float:hover { transform: scale(1.06); }
-  .wa-float:active { transform: scale(.98); }
-  .wa-float:focus-visible { outline: 2px solid var(--gold-3); outline-offset: 4px; }
-
   /* Marquee-ish hint dots */
   .pip { display:inline-block; width: 4px; height: 4px; background: var(--gold); border-radius: 999px; transform: rotate(45deg); }
 
@@ -320,33 +310,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* Section base */
   section { position: relative; }
 
-  /* alt section bg */
+  /* Alt section bg — uses extracted elevated surface (#ECECEC) */
   .bg-alt { background: var(--cream-2); }
-  .bg-deep { background: linear-gradient(180deg, #211712 0%, #15100C 100%); color: #E9D9BD; }
-  .bg-deep .em-serif { color: #D9B98A; }
-  .bg-deep .ornament .line { background: linear-gradient(90deg, transparent, #C9A977 40%, #C9A977 60%, transparent); }
-  .bg-deep .ornament { color: #C9A977; }
-  .bg-deep .ornament .dot { background: #C9A977; }
-
-  /* Frame for portrait with serif caption */
-  .portrait-card {
-    position: relative;
-    border-radius: 14px;
-    overflow: hidden;
-    background: rgba(43,31,22,0.4);
-    box-shadow: 0 30px 80px -36px rgba(20,14,10,0.85), 0 1px 0 rgba(201,169,119,0.30) inset;
-  }
 
   /* Quote marks */
-  .qmark { font-family: 'Cormorant Garamond', serif; font-size: 96px; line-height: .6; color: var(--gold); }
+  .qmark { font-family: 'Playfair Display', serif; font-size: 96px; line-height: .6; color: var(--gold); }
 
   /* Tap target focus */
   a:focus-visible, button:focus-visible, summary:focus-visible {
     outline: 2px solid var(--gold-3); outline-offset: 3px; border-radius: 4px;
   }
 
-  /* Specific: hero typography */
-  .hero-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; letter-spacing: -0.012em; line-height: 1.02; }
+  /* Hero typography */
+  .hero-h1 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; letter-spacing: -0.012em; line-height: 1.02; }
 
   /* Smaller spacing on tiny screens */
   @media (max-width: 380px) {
@@ -359,26 +335,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* Reduce motion */
   @media (prefers-reduced-motion: reduce) {
     .rise, .reveal { animation: none !important; transition: none !important; opacity:1 !important; transform: none !important; }
-    .wa-float { animation: none; }
   }
 
   /* Service card */
   .service {
-    background: linear-gradient(180deg, rgba(255,250,240,0.65), rgba(244,235,221,0.4));
-    border: 1px solid rgba(176,142,94,0.22);
+    background: linear-gradient(180deg, rgba(252,252,252,0.70), rgba(236,236,236,0.40));
+    border: 1px solid rgba(185,155,100,0.22);
     border-radius: 20px;
     transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .25s ease, box-shadow .35s cubic-bezier(.2,.7,.2,1);
   }
   .service:hover {
     transform: translateY(-3px);
-    border-color: rgba(176,142,94,0.45);
-    box-shadow: 0 24px 56px -28px rgba(43,31,22,0.30);
+    border-color: rgba(185,155,100,0.45);
+    box-shadow: 0 24px 56px -28px rgba(10,10,10,0.20);
   }
 
   /* Benefit item */
   .benefit {
     display: flex; gap: 14px; padding: 18px 0;
-    border-bottom: 1px solid rgba(176,142,94,0.15);
+    border-bottom: 1px solid rgba(185,155,100,0.15);
   }
   .benefit:last-child { border-bottom: 0; }
   .benefit .check {
@@ -386,31 +361,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width: 30px; height: 30px;
     display:flex; align-items:center; justify-content:center;
     color: var(--gold-2);
-    border: 1px solid rgba(176,142,94,0.40);
+    border: 1px solid rgba(185,155,100,0.40);
     border-radius: 999px;
-    background: linear-gradient(180deg, rgba(255,250,240,0.5), rgba(244,235,221,0.0));
+    background: linear-gradient(180deg, rgba(252,252,252,0.5), rgba(236,236,236,0.0));
   }
 
-  /* Polaroid-ish results frame */
+  /* Polaroid-ish results frame — uses extracted elevated tone */
   .result-frame {
-    background: #F8F0E1;
+    background: var(--cream-2);
     padding: 10px 10px 18px 10px;
     border-radius: 6px;
     box-shadow:
-      0 1px 0 rgba(255,255,255,0.6) inset,
-      0 18px 40px -22px rgba(43,31,22,0.35),
-      0 1px 0 rgba(176,142,94,0.20);
-    border: 1px solid rgba(176,142,94,0.22);
+      0 1px 0 rgba(252,252,252,0.6) inset,
+      0 18px 40px -22px rgba(10,10,10,0.22),
+      0 1px 0 rgba(185,155,100,0.20);
+    border: 1px solid rgba(185,155,100,0.22);
   }
   .result-frame img { border-radius: 3px; display:block; }
-
-  /* Header pill */
-  .topbar {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: rgba(244,235,221,0.72);
-    border-bottom: 1px solid rgba(176,142,94,0.18);
-  }
 
   /* Hide IFrame overscroll on mobile */
   iframe { display:block; }
@@ -420,7 +387,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* Small caps label */
   .smallcaps {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 11.5px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
@@ -428,23 +395,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight: 500;
   }
 
-  /* Gradient line on left of cite */
+  /* Pull-quote */
   blockquote {
     border-left: 2px solid var(--gold);
     padding-left: 18px;
-    color: var(--ink-soft);
-    font-family: 'Cormorant Garamond', serif;
+    color: var(--ink);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 21px;
     line-height: 1.45;
+    opacity: 0.86;
   }
 
   /* Map frame */
   .map-frame {
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(176,142,94,0.30);
-    box-shadow: 0 30px 80px -42px rgba(43,31,22,0.35);
+    border: 1px solid rgba(185,155,100,0.30);
+    box-shadow: 0 30px 80px -42px rgba(10,10,10,0.25);
+  }
+
+  /* ============ Feedbacks section ============ */
+  .fb-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.012em;
+    line-height: 0.95;
+  }
+  .fb-bubble {
+    position: relative;
+    background: var(--cream);
+    color: var(--ink);
+    border-radius: 22px;
+    padding: 28px 32px;
+    box-shadow:
+      0 1px 0 rgba(252,252,252,0.7) inset,
+      0 18px 40px -22px rgba(10,10,10,0.18),
+      0 30px 70px -36px rgba(10,10,10,0.14);
+    border: 1px solid rgba(185,155,100,0.16);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .fb-bubble .fb-quote {
+    position: absolute; top: 4px; left: 22px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 56px; line-height: 1;
+    color: var(--gold-2);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  .fb-bubble::after {
+    content: "";
+    position: absolute;
+    left: 28px; bottom: -12px;
+    width: 22px; height: 22px;
+    background: var(--cream);
+    border-right: 1px solid rgba(185,155,100,0.16);
+    border-bottom: 1px solid rgba(185,155,100,0.16);
+    transform: rotate(45deg);
+    border-bottom-right-radius: 4px;
+    box-shadow: 6px 6px 14px -8px rgba(10,10,10,0.12);
   }
 </style>
 </head>
@@ -471,7 +483,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              class="block object-cover
                     w-[110px] h-[110px] rounded-full border border-gold/30
                     lg:w-full lg:h-auto lg:max-w-[360px] lg:aspect-square lg:rounded-[22px]"
-             style="box-shadow: 0 18px 40px -22px rgba(43,31,22,0.28), 0 1px 0 rgba(255,250,240,0.6) inset;"/>
+             style="box-shadow: 0 18px 40px -22px rgba(10,10,10,0.28), 0 1px 0 rgba(252,252,252,0.6) inset;"/>
       </figure>
 
       <!-- TEXT -->
@@ -573,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="reveal service p-7 sm:p-10 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-40 h-40 rounded-full -translate-y-1/3 translate-x-1/3"
-             style="background: radial-gradient(circle, rgba(176,142,94,0.18), transparent 70%)"></div>
+             style="background: radial-gradient(circle, rgba(185,155,100,0.18), transparent 70%)"></div>
         <h3 class="font-serif text-[30px] sm:text-[34px] text-ink leading-tight">
           Remoção de <span class="em-serif italic">Micropigmentação</span>
         </h3>
@@ -589,7 +601,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="reveal delay-1 service p-7 sm:p-10 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-40 h-40 rounded-full -translate-y-1/3 translate-x-1/3"
-             style="background: radial-gradient(circle, rgba(176,142,94,0.18), transparent 70%)"></div>
+             style="background: radial-gradient(circle, rgba(185,155,100,0.18), transparent 70%)"></div>
         <h3 class="font-serif text-[30px] sm:text-[34px] text-ink leading-tight">
           Remoção de <span class="em-serif italic">Tatuagem</span>
         </h3>
@@ -686,15 +698,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="images/clinica-1.webp" alt="Sala principal — Clarissa Mello Clinic" loading="lazy" class="w-full h-full object-cover" />
         </figure>
         <figure class="img-vignette rounded-xl overflow-hidden aspect-[4/5]">
-          <img src="images/clinica-2.webp" alt="Sala de procedimentos" loading="lazy" class="w-full h-full object-cover" />
-        </figure>
-        <figure class="img-vignette rounded-xl overflow-hidden aspect-[4/5]">
           <img src="images/clinica-3.webp" alt="Detalhe da clínica" loading="lazy" class="w-full h-full object-cover" />
         </figure>
         <figure class="img-vignette rounded-xl overflow-hidden aspect-[4/5]">
           <img src="images/clinica-4.webp" alt="Espaço de cortesia" loading="lazy" class="w-full h-full object-cover" />
         </figure>
-        <figure class="img-vignette rounded-xl overflow-hidden aspect-[4/5]">
+        <figure class="img-vignette rounded-xl overflow-hidden col-span-2 lg:col-span-2 aspect-[4/5] lg:aspect-auto">
           <img src="images/clinica-5.webp" alt="Recepção" loading="lazy" class="w-full h-full object-cover" />
         </figure>
       </div>
@@ -709,8 +718,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <svg class="absolute -top-10 -right-20 opacity-[0.10] hidden sm:block" width="500" height="500" viewBox="0 0 200 200" aria-hidden="true">
     <defs>
       <linearGradient id="g1" x1="0" x2="1">
-        <stop offset="0" stop-color="#A07A45"/>
-        <stop offset="1" stop-color="#A07A45" stop-opacity="0"/>
+        <stop offset="0" stop-color="#AB8F62"/>
+        <stop offset="1" stop-color="#AB8F62" stop-opacity="0"/>
       </linearGradient>
     </defs>
     <g fill="none" stroke="url(#g1)" stroke-width=".4">
@@ -727,7 +736,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="lg:col-span-5 relative">
         <div class="reveal rounded-[14px] overflow-hidden"
-             style="box-shadow: 0 30px 80px -42px rgba(43,31,22,0.30), 0 1px 0 rgba(176,142,94,0.30) inset; border: 1px solid rgba(176,142,94,0.25);">
+             style="box-shadow: 0 30px 80px -42px rgba(10,10,10,0.30), 0 1px 0 rgba(185,155,100,0.30) inset; border: 1px solid rgba(185,155,100,0.25);">
           <img src="images/profissional.webp" alt="Clarissa Mello e equipe" loading="lazy"
                class="w-full h-auto object-cover block" />
         </div>
@@ -771,31 +780,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="reveal delay-1 mt-12 grid sm:grid-cols-2 gap-3 sm:gap-4">
       <div class="card-soft p-5 sm:p-6 flex gap-4 items-start">
-        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(176,142,94,0.40);border-radius:999px;color:var(--gold-2);">
+        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(185,155,100,0.40);border-radius:999px;color:var(--gold-2);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <p class="text-[15px] text-ink leading-relaxed">Fez uma <span class="em-serif">micropigmentação</span> que não ficou como esperava</p>
       </div>
       <div class="card-soft p-5 sm:p-6 flex gap-4 items-start">
-        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(176,142,94,0.40);border-radius:999px;color:var(--gold-2);">
+        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(185,155,100,0.40);border-radius:999px;color:var(--gold-2);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <p class="text-[15px] text-ink leading-relaxed">Tem uma <span class="em-serif">tatuagem</span> que não faz mais sentido</p>
       </div>
       <div class="card-soft p-5 sm:p-6 flex gap-4 items-start">
-        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(176,142,94,0.40);border-radius:999px;color:var(--gold-2);">
+        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(185,155,100,0.40);border-radius:999px;color:var(--gold-2);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <p class="text-[15px] text-ink leading-relaxed">Quer corrigir, suavizar ou <span class="em-serif">recomeçar do zero</span></p>
       </div>
       <div class="card-soft p-5 sm:p-6 flex gap-4 items-start">
-        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(176,142,94,0.40);border-radius:999px;color:var(--gold-2);">
+        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(185,155,100,0.40);border-radius:999px;color:var(--gold-2);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <p class="text-[15px] text-ink leading-relaxed">Busca um resultado mais <span class="em-serif">natural e harmônico</span></p>
       </div>
       <div class="card-soft p-5 sm:p-6 flex gap-4 items-start sm:col-span-2">
-        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(176,142,94,0.40);border-radius:999px;color:var(--gold-2);">
+        <span class="check shrink-0" style="display:flex; align-items:center; justify-content:center; width:30px;height:30px;border:1px solid rgba(185,155,100,0.40);border-radius:999px;color:var(--gold-2);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <p class="text-[15px] text-ink leading-relaxed">Tem <span class="em-serif">medo de piorar</span> a situação e quer fazer com segurança</p>
@@ -840,6 +849,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="images/resultado-6.webp" alt="Antes e depois — micropigmentação" loading="lazy"/>
       </figure>
     </div>
+  </div>
+  <hr class="section-rule" />
+</section>
+
+<!-- ============== FEEDBACKS ============== -->
+<section class="bg-alt grain relative overflow-hidden">
+  <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+
+    <h2 class="reveal fb-title text-[64px] sm:text-[88px] lg:text-[112px] -ml-1">feedback</h2>
+    <p class="reveal delay-1 mt-3 text-[12.5px] tracking-[0.32em] uppercase font-medium" style="color: var(--gold-2)">Histórias reais</p>
+
+    <div class="reveal delay-2 mt-12 grid sm:grid-cols-2 gap-5 sm:gap-7">
+      <article class="fb-bubble">
+        <span class="fb-quote" aria-hidden="true">“</span>
+        <p>Oi!!! Passando pra dar um feedback sobre o tratamento que fiz com vocês da sobrancelha. Quando me indicaram a clínica, eu confesso que fui, mas <span class="em-serif">sem esperar grandes resultados</span>. Talvez uma pequena melhora, mas com o passar do protocolo, sobretudo depois do tratamento <em class="em-serif">repair</em>, eu não acreditava na evolução estética que estávamos alcançando. As pessoas já percebiam e me perguntavam o que eu havia feito nas sobrancelhas. Enfim… só enfatizando que fiquei muito satisfeita e que fico feliz de ter encontrado profissionais tão qualificados 😍</p>
+      </article>
+
+      <article class="fb-bubble">
+        <span class="fb-quote" aria-hidden="true">“</span>
+        <p>Resultado <span class="em-serif">impecável!!!</span> Agradeço de coração por todo cuidado e atenção. Experiência maravilhosa e resultado ainda mais maravilhoso. 🧡🥰</p>
+      </article>
+
+      <article class="fb-bubble">
+        <span class="fb-quote" aria-hidden="true">“</span>
+        <p>Eu n tenho nem palavras pra dizer o quanto estou feliz, minha tatuagem sendo removida com <span class="em-serif">todo cuidado e atenção</span>, mto obrigado d vdd!! Tô mto feliz 🥹</p>
+      </article>
+
+      <article class="fb-bubble">
+        <span class="fb-quote" aria-hidden="true">“</span>
+        <p>Clarissaaa, eu tinha mto medo msm de remover, mas percebi que foi <span class="em-serif">super tranquilo</span>, já estou ansiosa pra finalizar as sessoes</p>
+      </article>
+    </div>
+
   </div>
   <hr class="section-rule" />
 </section>

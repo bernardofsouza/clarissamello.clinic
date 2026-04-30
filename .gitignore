@@ -2,6 +2,7 @@
 COPY.docx.pdf
 estilo_cores_fontes.jpeg
 modelo.png
+feedbacks.jpeg
 
 # Original (unconverted) image folders — production uses /images and Foto_Perfil/foto_perfil.webp
 Foto_profissional/
