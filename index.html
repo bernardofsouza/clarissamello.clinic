@@ -136,7 +136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   /* Italic emphasis — same Didone serif as MUDOU in the reference */
-  .em-serif { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 500; color: var(--gold-2); }
+  .em-serif { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 500; color: #DABF88; }
 
   /* Optical-size compensation: Playfair Display italic has a smaller x-height
      than Inter, so .em-serif needs a small bump inside sans body copy. */
@@ -149,23 +149,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing: 0.005em;
   }
 
-  /* CTA primary — extracted brown #917765, white text from extracted bg */
+  /* CTA primary — bg #DABF88, black text (contrast ratio ~9.4 on this tone, AAA) */
   .btn-primary {
     position: relative;
     display:inline-flex; align-items:center; justify-content:center; gap: 12px;
     padding: 16px 28px;
-    background: var(--cocoa);
-    color: var(--cream);
+    background: #DABF88;
+    color: var(--ink);
     font-family: 'Inter', sans-serif;
     font-size: 13px; font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     border-radius: 999px;
     box-shadow:
-      inset 0 1px 0 rgba(252,252,252,0.10),
-      0 1px 0 rgba(185,155,100,0.30),
-      0 10px 24px -12px rgba(10,10,10,0.30),
-      0 30px 64px -28px rgba(10,10,10,0.35);
+      inset 0 1px 0 rgba(252,252,252,0.45),
+      0 1px 0 rgba(10,10,10,0.06),
+      0 10px 24px -12px rgba(10,10,10,0.22),
+      0 30px 64px -28px rgba(10,10,10,0.25);
     transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s cubic-bezier(.2,.7,.2,1), filter .25s ease;
   }
   .btn-primary::before {
@@ -173,23 +173,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute; inset: 0;
     border-radius: 999px;
     padding: 1px;
-    background: linear-gradient(180deg, rgba(185,155,100,0.55), rgba(185,155,100,0.05) 60%, rgba(185,155,100,0.30));
+    background: linear-gradient(180deg, rgba(252,252,252,0.55), rgba(252,252,252,0.05) 60%, rgba(10,10,10,0.10));
     -webkit-mask: linear-gradient(#000,#000) content-box, linear-gradient(#000,#000);
     -webkit-mask-composite: xor; mask-composite: exclude;
     pointer-events:none;
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    filter: brightness(1.08);
+    filter: brightness(0.93);
     box-shadow:
-      inset 0 1px 0 rgba(252,252,252,0.16),
-      0 1px 0 rgba(185,155,100,0.40),
-      0 14px 30px -14px rgba(10,10,10,0.35),
-      0 40px 80px -32px rgba(10,10,10,0.40);
+      inset 0 1px 0 rgba(252,252,252,0.55),
+      0 1px 0 rgba(10,10,10,0.10),
+      0 14px 30px -14px rgba(10,10,10,0.28),
+      0 40px 80px -32px rgba(10,10,10,0.32);
   }
-  .btn-primary:active { transform: translateY(0); filter: brightness(0.96); }
+  .btn-primary:active { transform: translateY(0); filter: brightness(0.88); }
   .btn-primary:focus-visible {
-    outline: 2px solid var(--gold-3); outline-offset: 4px;
+    outline: 2px solid #DABF88; outline-offset: 4px;
   }
 
   /* Outline variant */
@@ -490,9 +490,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="order-2 lg:order-1 lg:col-span-7 text-center lg:text-left">
         <h1 class="rise rise-2 hero-h1 text-[34px] sm:text-[48px] lg:text-[60px] text-ink">
           Remoção de
-          <span class="em-serif italic" style="color: var(--gold-2)">tatuagem</span>
+          <span class="em-serif italic" style="color: #DABF88">tatuagem</span>
           e
-          <span class="em-serif italic" style="color: var(--gold-2)">micropigmentação</span>
+          <span class="em-serif italic" style="color: #DABF88">micropigmentação</span>
           em Paulo Afonso
         </h1>
 
